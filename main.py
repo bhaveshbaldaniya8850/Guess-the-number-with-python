@@ -119,7 +119,7 @@ class SciFiGuessGame(ctk.CTk):
             self.feedback_label.configure(text="ERROR: INVALID DATA TYPE", text_color=self.color_error)
             self.sound_effect_visual(self.color_error)
         elif result == 'CORRECT':
-            self.feedback_label.configure(text="ACCESS GRANTED.\nSYSTEM UNLOCKED.", text_color=self.color_success)
+            self.feedback_label.configure(text="ACCESS GRANTED TO THE USER.\nSYSTEM UNLOCKED SUCESSFULLY!!!.", text_color=self.color_success)
             self.status_label.configure(text="BYPASS SUCCESSFUL", text_color=self.color_success)
             self.entry.configure(state="disabled")
             self.submit_btn.configure(text="RESET", command=self.reset_game, fg_color=self.color_success)
